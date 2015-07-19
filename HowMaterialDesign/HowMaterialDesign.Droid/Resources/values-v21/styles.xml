@@ -1,5 +1,11 @@
 ﻿<resources>
-  <style name="MeuTema" parent="android:Theme.Material.Light">
-
+  <style name="MeuTema" parent="@style/Theme.AppCompat.Light.NoActionBar">
+ 
+    <item name="android:colorPrimary">@color/primary</item>
+    
+    <item name="android:colorPrimaryDark">@color/primary_dark</item>
+    
+    <item name="android:colorAccent">@color/accent</item>
+    
   </style>
 </resources>

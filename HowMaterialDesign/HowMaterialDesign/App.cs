@@ -12,21 +12,29 @@ namespace HowMaterialDesign
         public App()
         {
             // The root page of your application
-            MainPage = new ContentPage
-            {
-                Content = new StackLayout
-                {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
+			MainPage = new ContentPage {
+				Content = new StackLayout {
+					VerticalOptions = LayoutOptions.Center,
+					Children = {
 						new Label {
 							XAlign = TextAlignment.Center,
 							Text = "Welcome to Xamarin Forms!"
-						}, new Button(){
+						}, new FloatButton () {
 							Text = "ClickMe"
+						},
+						new Entry () {
+							Text = "Digite aqui"
+						},
+						new ActivityIndicator () {
+							IsVisible = true,
+                            IsRunning = true
+						},
+						new Slider () {
+							Value = 0.5
 						}
 					}
-                }
-            };
+				}
+			};
         }
 
         protected override void OnStart()
